@@ -1,0 +1,139 @@
+* {
+  -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #fafafa;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 85%;
+  background-color: #e942ff;
+  background-image: linear-gradient(180deg, #e942ff 18%, #8838ff 100%);
+  border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+  left: -236px;
+}
+
+.contaner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  margin: 0 50px;
+  align-items: center;
+}
+
+
+.contaner p {
+  color: hsl(270, 7%, 64%);
+}
+
+.contaner h1 {
+  color: hsl(271, 36%, 24%);
+}
+
+
+@media (min-width: 576px) {
+  .contaner {
+    max-width: calc(100% - 50px);
+    max-height: calc(100% - 30px);
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .contaner {
+    max-width: calc(100% - 200px);
+      max-height: calc(100% - 100px);
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contaner {
+    max-width: calc(100% - 200px);
+    max-height: calc(100% - 100px);
+  }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contaner {
+    width: 900px;
+    max-height: 550px;
+    justify-content: space-between;
+  }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  .contaner {
+    width: 900px;
+    max-height: 550px;
+    justify-content: space-between;
+  }
+}
+
+/* Start phone */
+
+.phone {
+background-color: hsl(270, 20%, 96%);
+  border: solid 10px #fff;
+  border-radius: 30px;
+  width: 300px;
+  position: relative;
+  height: 600px;
+}
+
+.phone::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  background-color: #fff;
+  top: 0;
+  right: 50%;
+  transform: translate(50% , 0);
+  border-radius: 100% 108% 25% 25% / 0% 0% 100% 100%;
+}
+
+.phone .head .img-o img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.on-left img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+/* End phone */
+
+
+.description {
+  padding: 50px;
+  width: 500px;
+  height: fit-content;
+}
+
+.description h1 {
+  font-size: 2.9em;
+  letter-spacing: 0.013em;
+  font-weight: 453;
+}
+
+.description p {
+  line-height: 1.6;
+  font-weight: 380;
+  font-size: 17px;
+}
