@@ -81,7 +81,7 @@ main::before {
 }
 
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .contaner {
     width: fit-content;
       max-height: fit-content;
