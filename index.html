@@ -10,7 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/all.min.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -31,22 +33,19 @@
           
           <!-- Start Head of phone -->
           <div class="head">
-            
-            <div class="img-o">
+              <i class="fa-solid fa-chevron-left fa-sm "></i>
               <img src="images/avatar.jpg" alt="not found">
-              <p>Samuel Green</p>
-              <p>Available to Walk</p>
-            </div>
-
+              <div class="status">
+                <p>Samuel Green</p>
+                <p>Available to Walk</p>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
           </div>
           <!-- End Head of phone -->
 
           <div class="on-right">
             <p>That sounds great. I'd be happy with that.</p>
             <p>Could you send over some pictures of your dog, please?</p>
-            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-            <p class="special">30 minute walk $29</p>
-            <p class="special">1 hour walk $49</p>
           </div>
 
           <div class="on-left">
@@ -61,9 +60,14 @@
             <p>Can you make it?</p>
           </div>
 
-          <div class="massage-section">
-            <p></p>
-            <span>Type a message…</span>
+          <div class="on-right">
+            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            <p class="special">30 minute walk <span>$29</span></p>
+            <p class="special">1 hour walk <span>$49</span></p>
+          </div>
+          <div class="massage">
+            <input type="massage" placeholder="Type a massage.." class="send-section">
+            <i class="fa-solid fa-circle-chevron-right"></i>
           </div>
 
         </div>
